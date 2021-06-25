@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    flex-direction: none;
+    color: rgb(75, 75, 75);
+    font-size: sans-serif;
+    font-size: 3rem;
+    border: 5px solid black;
+    padding:40px 80px ;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+a:before{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(120deg,rgb(145, 133, 255),blue);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform:rotate(-90deg);
+    transition: transform 1s;
+}
+
+a:hover:before{
+     transform:rotate(0deg);
+      
+}
+
+
+ 

@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 5rem;
+    /* border: 1px solid black; */
+    font-weight: bolder;
+    color: gray;
+    font-family: sans-serif;
+    position: relative;
+    transition:all .5s;
+    overflow: hidden;
+
+}
+p::before{
+    content: 'LOVELY';
+    width: 0%; 
+    /* height: 100%; */
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    color: black;
+    transition:all .5s;
+    overflow: hidden;
+
+}
+p:hover::before
+{
+    width: 100%;
+    
+}
